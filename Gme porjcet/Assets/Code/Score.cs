@@ -23,7 +23,7 @@ public class PlayerGetCoin : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Coins"))
         {
             Score++;
-            ScoreText.text = Score.ToString("Score : " + Score);
+            ScoreText.text = Score.ToString("Score :" + Score);
             Destroy(other.gameObject, 0.1f);
         }
     }
